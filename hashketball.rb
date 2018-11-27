@@ -122,19 +122,17 @@ end
 
 def num_points_scored(player_name)
   
-  # points_scored=nil
+  points_scored=nil
   
   game_hash.each do|location,team_data|
-  binding.pry
     team_data[:players].each do|name,stats|
-    
       if name == player_name
-        return stats[:points]
+        points_scored = stats[:points]
       end
     end
   end
   
-  # points_scored
+  points_scored
 end
 
 def shoe_size(player_name)
@@ -233,11 +231,4 @@ def big_shoe_rebounds
   rebounds
   
 end
-
-
-
-
-
-
-
 
