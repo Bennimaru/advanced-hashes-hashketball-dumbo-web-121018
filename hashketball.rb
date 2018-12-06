@@ -127,7 +127,7 @@ def num_points_scored(player_name)
   game_hash.each do|location,team_data|
     team_data[:players].each do|name,stats|
       if name == player_name
-        points_scored=stats[:points]
+        points_scored = stats[:points]
       end
     end
   end
@@ -231,11 +231,4 @@ def big_shoe_rebounds
   rebounds
   
 end
-
-
-
-
-
-
-
 
